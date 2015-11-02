@@ -27,6 +27,13 @@
 \center % Center everything on the page
  
 \textsc{\LARGE KU Leuven}\\[1.5cm] % Name of your university/college
+
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=30mm]{logo_theo.png}
+\label{kulogo}
+\end{figure}
+
 \textsc{\Large Ma Ingenieurswetenschappen: Computerwetenschappen}\\[0.5cm] % Major heading such as course name
 
 
@@ -35,10 +42,10 @@
 \HRule \\[1.5cm]
 
 
-\textsc{\large Lesnota's}\\[0.5cm] % Minor heading such as course title
+\textsc{\Large Lesnota's}\\[0.5cm] % Minor heading such as course title
 
 
-\Large \emph{Author:}\\
+\large \emph{Author:}\\
 Helena \textsc{Brekalo}\\[3cm]
 
 {\large 2015-2016}\\[3cm] % Date
@@ -1004,6 +1011,184 @@ Nadeel: neemt heel veel tijd in beslag en het kan zijn dat je geen overeenkomst 
 \paragraph{Slide 24:} Normaal, wanneer we kijken naar het resultaat hiervan, zullen we zien dat expertopinie meestal voldoende is. De Delphi-methode is tijdsverslindend en duur (je moet al die experts betalen). Bij ``gewone" correspondenten kan het goedkoper/gratis zijn, maar het kan langer duren vooraleer je antwoord hebt. 
 
 \paragraph{Slide 25:} Als we kwantitatieve data hebben, zullen we ofwel van causale modellen gebruik maken, ofwel van tijdsreeksen. Bovenste zijn causale modellen, onderste zijn tijdsreeksen.
+
+\chapter{Les 10: Oefenzitting 2}
+Zie volgende pagina voor handgeschreven nota's.
+
+\includepdf[pages={1,2,3}]{Les10Oefenzitting2.pdf} 
+
+\chapter{Les 11}
+
+\section{Slides: 10\_Bedrijfskunde\_Voorspellingstechnieken}
+
+\paragraph{Slide 25:} We gaan eerst kijken naar causale modellen: er gebeurt nu iets dat impact zal hebben op iets wat een paar maanden later gebeurt. We willen een verband leggen tussen wat nu gebeurt en wat later gebeurt.
+Als er geen causaal verband is, maken we gebruik van tijdsreeksen gebaseerd op historische gegevens.\\
+Belangrijk is om altijd een tekening te hebben als je historische gegevens hebt, zo kan je beter zien of er een trend is. De methode die je gebruikt zal afhankelijk zijn van het patroon dat je vindt. Als je een methode gebruikt die een trend niet kan weergeven, ga je een probleem hebben. Het is beter een methode te gebruiken die meer doet dan je verwacht. 
+
+\paragraph{Slide 26:} D is de vraag in een bepaalde peroide, F is de voorspelling gemaakt op basis van de periodes op voorhand. Werken we met tijdsreeksen, baseren we ons op voorgaande vragen, rekening houdend met een bepaald gewicht. Naarmate de vraag verder in het verleden zit, zal het gewicht lichter zijn.
+
+\paragraph{Slide 27:} We hebben een loodgieter die moet voorspellen hoeveel spanklemmen hij nodig gaat hebben. De eerste parameter is de onafhankelijke, de tweede is afhankelijk.
+
+\paragraph{Slide 28:} De eerste methode die je kan gebruiken is lineaire regressie: de vraag die we hebben naar spanklemmen is een functie van het aantal bouwtoelatingen dat gegeven werd (h) vermenigvuldigd met een parameter b. We willen het volgende weergeven: zie Figuur \ref{les11_01}.\\
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=90mm]{Les11_01.png}
+\caption{Les 11 Slide 28} 
+\label{les11_01}
+\end{figure}
+
+Let op dat je de juiste verbanden legt! Als kinderen meer tv kijken en ouders kopen meer paraplu's, is het een niet per s\'e het gevolg van het ander. Het kunnen alletwee gevolgen zijn van het feit dat het regent.
+
+\paragraph{Slide 30:} Stellen we de gegevens van \textbf{Slide 29} grafisch voor, zien we inderdaad een lineair verband.\\
+De bedoeling is nu om het snijpunt te vinden en dan de helling van de curve te vinden.\\
+Hoe kunnen we dit doen? We kunnen dit op het zicht doen. Als we er een lijn doortrekken, kunnen we zien dat we starten op ongeveer 25. we hebben een stijging van ongeveer 300, dus ongeveer 1,85. Als je 100 bouwplannen krijgt, zal je 25+185=210 spanklemmen nodig hebben.
+
+\paragraph{Slide 31:} We kunnen ook telkens de fout ten opzichte van de rechte berekenen.
+
+\paragraph{Slide 32:} De formules om de fout te vinden. Het resultaat blijkt 1,83 te zijn, hoewel de schatting 1,85 was. Dit toont dat de grafische methode vaak al genoeg is. Op het examen moet je de formules dus ook niet per s\'e gebruiken, de grafische methode is soms voldoende.\\
+Ex-examenvraag: je hebt als vraag 98, 100, 102, 104, 106, 108, wat is het volgende getal in de rij? Ga niet die formules gebruiken, je ziet dat het met 2 stijgt, dus het volgende getal is 110.
+
+\paragraph{Slide 33:} Er zijn ook andere regressiemethoden.
+
+\paragraph{Slide 34:} Causale modellen zijn interessant wanneer er een verband is waarbij je 1 onderdeel kent en het andere wilt voorspellen.\\
+Let op dat de zaken die je gebruikt vaak enkel bruikbaar zijn binnen bepaalde marges. Als je voor een bepaalde grootte van het product maar 1 persoon nodig hebt aan de machine, kan het zijn dat als het product groter wordt, je 2 mensen nodig hebt, dus gaat uw curve niet meer kloppen.
+
+\paragraph{Slide 35:} Dikwijls hebben we geen causaal model en moeten we ons baseren op basis van tijdsreeksen. We beginnen met stationaire tijdsreeksen: constante processen. We nemen aan dat de vraag constant is en epsilon gelijk is aan de ruis.
+
+\paragraph{Slide 36:} We gaan kijken naar de vorige periodes, die vragen optellen en dan delen door het aantal. Je moet wel bepalen welke input je neemt en we gaan ook kijken naar de invloed van die N.
+
+\paragraph{Slide 37:} We kijken naar de verkoop van tandpasta. 
+
+\paragraph{Slide 38:} De vraag van tandpasta weergegeven. Als we de voorspelling zouden willen maken voor periode 51 op basis van 3 periodes: zie Figuur \ref{les11_02}.
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=90mm]{Les11_02.png}
+\caption{Les 11 Slide 38} 
+\label{les11_02}
+\end{figure}
+
+\paragraph{Slide 40:} De donkere curve is het vraagpatroon. We hebben nog een gele en roze curve. Het driewekelijkse gemiddelde zal starten na 3 weken (dus roze), het zeswekelijkse gemiddelde zal na 6 weken starten. Het gele is daarenboven meer uitgevlakt en genereert een stabieler patroon dan het roze. In de gele curve neem je meer getallen mee, waardoor het meer uitgevlakt zal zijn. Als je 3 keer 10 neemt, krijg je een gemiddelde van 10. als je 10, 10, 20 neemt, krijg je 13,3. Als we zouden kijken naar 6 perioden, zal een afwijking (van die 10) veel minder uitgesproken zijn. 
+
+\paragraph{Slide 41:} Kijken we naar dezelfde vraag waarbij de concurrentie in rekening genomen moet worden: we zien een stijging in de vraag. Kijken we hier naar de 2 patronen: het driewekelijks gemiddelde zal sneller reageren dan het zeswekelijks gemiddelde omdat in het driewekelijks gemiddelde getallen sneller `verdwijnen' (je neemt ze sneller niet meer in rekening), het zeswekelijks gemiddelde zal langer blijven werken met oudere getallen. Als er wijziigngen zijn, zal het zeswekelijks gemiddelde dus achterlopen op het driewekelijkse gemiddelde.
+
+\paragraph{Slide 42:} Wanneer we trends hebben, zal het voortschuivend gemiddelde continu achterlopen bij een stijging en voorlopen bij een daling.
+
+\paragraph{Slide 43:} Voordeel: stabiel. Nadelen: je moet kijken of er een trend is of niet en bepaalde zaken worden niet in rekening gehouden, zoals complexe relaties, die hierin niet kunnen worden meegenomen.
+
+\paragraph{Slide 44:} Tweede techniek om stationaire reeksen te voorspellen: exponenti\"ele afvlakking. We gaan elke keer een gewogen gemiddelde berekenen: we maken een bepaalde voorspelling, krijgen een bepaalde vraag die normaal zal afwijken en we gaan dat lineair interpoleren en op basis daarvan een nieuwe vraag afleiden. Het komt er dus op neer dat we een gewogen gemiddelde nemen tussen de gekende vraag en de voorspelling. We moeten weer een gewicht geven aan de gekende vraag en het voorspelde getal. De nieuwe voorspelling zal gelijk zijn aan $\alpha$. 
+
+\paragraph{Slide 45:} $\alpha$ zal men meestal leggen rond 0,1, 0,2. Als je $\alpha$ groter maakt, zal je veel meer variabel rondspringen. Als $\alpha$ kleiner is, zal je een veel stabieler patroon hebben. Als je de eerste formule uitschrijft als $F_{t-1}$ en $D_{t-1}$, zie je dat we rekening houden met alle voorbije data. De factor waarmee we rekening houden met het verleden wordt wel kleiner met de tijd. 
+
+\paragraph{Slide 46:} Je ziet dat oude data steeds minder gewicht krijgt.
+Voorbeeld: zie Figuur \ref{les11_03}.
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=90mm]{Les11_03.png}
+\caption{Les 11 Slide 46} 
+\label{les11_03}
+\end{figure}
+
+\paragraph{Slide 47:} Als er een trend is, lopen beide methoden achter. ES houdt rekening met alle voorbije data, met telkens minder gewicht. Het grote voordeel van het voortschrijdend gemiddelde is dat als er ergens een piek is (meetfout bv.), dan zal die na enkele periodes niet meer in rekening genomen worden. 
+
+\paragraph{Slide 48:} We hebben voor de voorbije 24 maanden de verkopen staan. Als we kijken naar de cijfers die er staan, merken we dat de waarden stijgen en er zal wellicht ergens een trend inzitten. We kunnen dit oplossen met regressieanalyse, maar expoleren is gevaarlijk.
+
+\paragraph{Slide 49:} Komen we een curve zoals deze tegen, gaan we dubbele exponenti\"ele afvlakking gebruiken. Het is de bedoeling om de trend te vinden (lineair) die er is.
+
+\paragraph{Slide 51:} Het komt erop neer dat wanneer we kijken naar een voorspelling, we ergens een startpunt hebben en ergens een bepaalde trend (zie tekening). Op basis van het startpunt en de trend zullen we uiteindelijk onze voorspelling bekomen. Zie Figuur \ref{les11_04}.\\
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=30mm]{Les11_04.png}
+\caption{Les 11 Slide 51 (1)} 
+\label{les11_04}
+\end{figure}
+
+In de eerste vergelijking, $S_{t-1} + G_{t-1}$ komt overeen met $F_{t}$. Ons nieuw startpunt zal overeenkomen met de voorspelling aan de ene kant en de vraag aan de andere kant.\\
+De volgende helling wordt bepaald door de trend van de vorige periode, het verschil tussen de twee startpunten (stippellijn op Figuur \ref{les11_05}). We zullen een weging maken tussen de oorspronkelijke trend en de trend veroorzaakt door de 2 startpunten. Dan vertrekken we daaruit en krijgen we $G_{t}$. Zie Figuur \ref{les11_05}.
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=90mm]{Les11_05.png}
+\caption{Les 11 Slide 51 (2)} 
+\label{les11_05}
+\end{figure}
+
+\paragraph{Slide 52:} We willen een voorspelling maken. We moeten ergens op een of andere manier een startpunt vinden (S24) en een G24 zodanig dat al we S24 en G24 optellen, we F25 krijgen.\\
+We kunnen dit op verschillende manieren doen: grafisch (lijn trekken en dan aflezen op de grafiek). We moeten hierbij dan een goede trend vinden en een start bepalen.\\
+We hebben 2 jaren gegeven. De trend over 2 jaar heen is ongeveer dezelfde. Als we daarmee starten, kunnen we het volgende doen: zie Figuur \ref{les11_06}.\\
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=90mm]{Les11_06.png}
+\caption{Les 11 Slide 52 (1)} 
+\label{les11_06}
+\end{figure}
+
+Kijken we naar deze cijfers: als je een overschatting maakt, gaat alles naar beneden getrokken worden, maak je een onderschatting, wordt alles naar boven getrokken. Zie Figuur \ref{les11_07}.\\
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=90mm]{Les11_07.png}
+\caption{Les 11 Slide 52 (2)} 
+\label{les11_07}
+\end{figure}
+
+We kunnen dus op verschillende manieren starten. Wat we ook kunnen doen is Holt toepassen van in het begin. Je moet wel ergens een beginwaarde en begintrend vinden. Je kan dan een formule toepassen waarbij je de trend en het startpunt aanpast en zo een nieuw punt vindt. De voorspelling is dus de som van uw trend en uw startpunt.\\
+Nu is het zo dat je andere waarden kan nemen als beginwaarde, dan zal je merken dat op het einde de afwijking relatief klein is. Als je in het begin ergens een fout hebt gemaakt, zal zich dat uitvlakken omdat oude informatie steeds minder hard zal doorwegen. 
+
+\paragraph{Slide 53:} We hebben ook seizoensinvloeden. Het is dan interessant om te kijken naar de periodes waarin ze terugkeren. Je kan seizoensinvloeden hebben die over een jaar zijn (bv. Speelgoedfabrikanten), maar ook om de zoveel maanden. Je moet dit eerst proberen te herkennen vanuit uw data. Dan ga je een formule opstellen.
+
+\paragraph{Slide 55:} We gebruiken altijd hetzelfde systeem: we hebben ergens een bepaald startpunt, een bepaalde trend en dan krijg je een punt op de trendlijn en moet je de seizoensfactor introduceren (factor $>$1 of $<$1). In dit geval hebben we een seizoensinvloed die gekoppeld is aan een trend. Zie Figuur \ref{les11_08}.
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=90mm]{Les11_08.png}
+\caption{Les 11 Slide 55} 
+\label{les11_08}
+\end{figure}
+
+\paragraph{Slide 56:} Gelijkaardige formules. $S_{t}$ = startpunt, $G_{t}$ = de helling, $c_{t}$ = seizoensinvloed. We gaan de vraag delen door de seizoensfactor (D/c) zodat we het verschil hebben.\\
+Als het vraagpatroon er als volgt zou uitzien, dan gaan we niet de zwarte periodes nemen. We gaan het eerste deel aan de kant laten liggen, die zijn niet representatief. Het kan zijn dat je pas na een tijd een normale vraag krijgt. \\
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=90mm]{Les11_09.png}
+\caption{Les 11 Slide 56} 
+\label{les11_09}
+\end{figure}
+
+Als je het eerste deel meeneemt, ga je te lang nodig hebben om je aan te passen en de fout weg te werken.
+
+\paragraph{Slide 58:} Formules.
+
+\paragraph{Slide 59:} Voorbeeld: We hebben de periodes t, de vraag d en de voorspelling F gekoppeld aan die vraag d. e = F-d. E is de cumulatieve fout. MAD is de absolute waarde van het gewogen gemiddelde. MSE is de gemiddelde foutmarge in het kwadraat. MAPE zijn de percentages.\\
+Wat kunnen we zeggen over de e-kolom? We moeten zowel positieve als negatieve waarden hebben. Als we altijd een positieve of negatieve fout vinden, gaan we voorlopen. Het is niet zo dat we graag kleine negatieve en grote positieve waarden hebben. We willen dat als we de som gaan bekijken, we ongeveer 0 uitkomen. Als de waarden in E zowel positief als negatief zijn, is dat ook goed. Je wilt waarden vinden die positief en negatief zijn en liefst zo dicht mogelijk bij nul liggen. Bij MAD, MSE en MAPE hebben we graag waarden die stabiel worden na een bepaalde periode. Kijken we naar de gemiddelde fout en de gemiddelde kwadratische fout, deze mogen niet plots beginnen stijgen, want dan krijgen we plots grote afwijkingen. We willen dus dat die waarden relatief stabiel zijn. MAPE moet ook stabiel zijn, dat geeft ons weer wat onze gemiddelde afwijking is.\\
+Als we tot de conclusie komen dat bepaalde zaken totaal fout lopen, moeten we de zaken analyseren.
+
+\paragraph{Slide 60:} Bias: constant positief of negatief. 
+
+\paragraph{Slide 61:} Om dit te kunnen opvolgen maakt men gebruik van quality management. We willen dat onze fout binnen een bepaalde marge zit (komt niet op examen, ter informatie). Er is een verband tussen de gemiddelde absolute afwijking en de $\sigma$ van de ruis. De $\sigma$ van de ruis is ongeveer de gemiddelde afwijking/0,8. Voor de $\alpha$-waarden kom je dan ook tot een bepaald verband.\\
+Uiteindelijk is het zo dat we ergens een fout zullen maken en dat we proberen die fout te krijgen tussen 2 waarden. Zolang onze fout tussen die twee waarden zit, zullen we aannemen dat onze voorspellingstechniek goed werkt. Zitten we buiten die waarden, dan moeten we gaan reageren en nakijken wat er verkeerd loopt met onze methode of wat er is aangepast aan het vraagpatroon. 
+
+\paragraph{Slide 62:} Om dit te kunnen doen, maken we voorspellingen op de fouten. Zolang $\rho$ kleiner of gelijk is aan 4, zitten we goed. 
+
+\paragraph{Slide 64:} We gaan de voorspellingen genereren en doorrekenen. We zien dan dat $\rho$ altijd kleiner is dan 4. In dit geval zitten we betrouwbaar en hebben we geen enkel probleem. Onze voorspellingsmethode werkt dus goed.
+
+\paragraph{Slide 66:} Bij exponenti\"ele afvlakking zijn er problemen als er een plotse sprong is. Exponenti\"ele afvlakking kan het dus niet volgen.\\
+We doen dezelfde berekeningen (\textbf{Slide 67}) en zien dat onze delta (voorspelling van de fout) dit toont, alsook rho: rho komt boven de 4. Als je dat merkt, wil dat zeggen dat je moet reageren, je moet nakijken wat er fout loopt.\\
+Wil het zeggen dat als je boven 4 zit, er een foute methode wordt gebruikt? Niet noodzakelijk. Het kan zijn dat er iets gebeurd is waardoor we plots een grote rho krijgen. Het kan zijn dat er een sprong is geweest, maar achteraf opnieuw een stabiel patroon. We moeten gewoon kijken wat er gebeurd is, en eventueel geen rekening houden met die sprongen. 
+
+\paragraph{Slide 68:} Je moet niet plots nieuwe methoden gebruiken, gewoon eerst kijken wat er gebeurd is en dan handelen. Je kan dan bepaalde cijfers schrappen en initaliseren met nieuwe waarden.\\
+Kijken we op het einde naar de waarden (\textbf{Slide 67}), zien we rho weer dalen naar het einde toe.
+
+\paragraph{Slide 70:} Het is van groot belang om na te gaan welk model gebruik moet worden. Je moet dit ook opvolgen, niet gewoon starten en dan zo verder werken, je moet altijd controleren.\\
+We hebben zeer eenvoudige modellen gezien, er zijn er natuurlijk ook complexere. 
+
+\paragraph{Slide 72:} Onze voorspelling zal juist zo zijn dat we die nodig hebben voor onze voorraadbeheer en ons productieplan. Kijken we naar de voorraad, kijken we naar de eindvoorraad. Als die eindvoorraad is vastgelegd, gaan we daaraan de productie koppelen. Bij de inventory gaan we andere assumpties maken dan bij de productie.
+
 
 
 \end{document}
