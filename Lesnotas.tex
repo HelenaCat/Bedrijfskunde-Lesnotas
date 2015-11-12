@@ -1189,6 +1189,378 @@ We hebben zeer eenvoudige modellen gezien, er zijn er natuurlijk ook complexere.
 
 \paragraph{Slide 72:} Onze voorspelling zal juist zo zijn dat we die nodig hebben voor onze voorraadbeheer en ons productieplan. Kijken we naar de voorraad, kijken we naar de eindvoorraad. Als die eindvoorraad is vastgelegd, gaan we daaraan de productie koppelen. Bij de inventory gaan we andere assumpties maken dan bij de productie.
 
+\chapter{Les 12}
+Slides: 11
+
+Slide 2: We gaan een voorraadpolitiek vastleggen. Obv daarvan kijken we naar het productieplan zelf.De eerste 4 systemen worden allemaal gebruikt om productie aan te sturen. 
+Slide 4: Voorraadbeheer is van belang omdat de verkoop (en voorraad) gekoppeld is aan de financiele cyclus van het bedrijf. We willen dat de voorraadrotatie klein is zodat de financiele cyclus ook klein is. Het is de bedoeling dat de cirkel zo snel mogelijk rond is en het geld zo snel mogelijk opnieuw binnenkomt.
+Slide 5: We gaan kijken naar voorraden omdat zelfs als de vraag volledig deterministisch zou zijn en gekend zou zijn, gaan we toch gebruik maken van voorraden. De redenen zijn gegeven in het lijstje:
+	• Schaalvoordelen: naarmate we meer stuks maken, kunnen we de vaste kosten verdelen over al die stuks, waardoor de kost per stuk lager is:
+
+%TODO figuur 1	
+	
+	• Onzekerheid in levertermijn: er zit een bepaalde spreiding op wanneer de leverancier levert. Je moet zorgen dat als de leverancier aan de late kant, is je toch nog kan produceren.
+	• Speculatie: als je weet dat accijnzen bv gaan stijgen, ga je voorraden aanleggen.
+	• Transport
+	• Uitvlakken productie:
+	%TODO figuur 2
+	• Logistiek
+	• Controlekosten: je moet betalen per controle, dus als je meer in een keer kan laten controleren, zal het goedkoper zijn.
+Slide 6: We moeten altijd controleren hoe wer verkopen: soms meer, soms minder. We moeten continu controleren wat er gebeurt met de voorraad. 
+Slide 7: er bestaan verschillende systemen. Het eerste gaat periodiek kijken wat er gebeurt met de voorraad. Ongeacht wat er gebeurt, we gaan pas kijken op t1 en daarna op t2. we merken dat we een target niveau hebben (max. niveau van voorraad dat we willen), maar ook een reorder point: zodra we hieronder komen, gaan we bijbestellen. De restvoorraad zal onvoldoende zijn om de cyclus te overbruggen. Je bemerkt dat we controleren op t1 en t2, bij t2 ziek we dat we moeten bijbestellen. Het kan ook zijn dat de voorraad vee drastischer gaat dalen, waarbij je negatieve voorraad kan hebben, waarbij je niet kan voldoen aan de vraag.
+Een ander systeem is het continu herzien: continue kijken in ons magazijn hoe de voorraad is. We zien dat onze voorraad daalt en dat we ons reorder point naderen, dus we gaan opnieuw bijbestellen. Als de voorraad nu heel snel daalt, gaan we snel kunnen bijbestellen. 
+Het systeem van continu herzien zal veel duurder zijn dan periodiek herzien. Men gebruikt bij continu herzien vaak RFID of barcodes. Men zal continu herzien gebruiken voor kritieke stukken, wanneer tekorten daarbij grote implicaties heeft voor de klanten. Voor standaardstukken ga je periodiek herzien gebruiken, waarbij het wel eens (een beetje) mag foutlopen.
+Slide 8: Aan de ene kant is het nuttig om zoiets te hebben omdat we zo flexibel kunnen zijn, maar anderzijds gaan we ook een hele reeks kosten hebben. Die kosten hebben te maken met
+	• Opslag: daar zit geld in dat niet gebruikt kan worden. Dit wordt dikwijls uitgedrukt in procenten: hoeveel procent van de voorraad zal voor een bepaalde bestelling gebruik worden?
+		- Verouderingskosten: als producten ergens lang liggen, gaan klanten dat misschien niet meer willen. Het kan zijn dat er producten zijn die niet meer roteren in het bedrijf. Ze zijn niks meer waard voor de klant, maar het bedrijf houdt ze omdat ze anders de balans moeten aanpassen.
+		- Diefstal: als er taarten worden gemaakt in de winkel, kan het zijn dat het personeel versieringen ofzo zelf opeet.
+	• Voorraadbreukkosten: het kan zijn dat men zegt dat per dag te laat een bepaalde boete betaald wordt, of dat je die klant verliest. Op die manier kan je evt ook andere klanten verliezen omdat je niet betrouwbaar bent. Je kan werken met een service graad: men gaat proberen een voorraadniveau te halen zodat je in 95% van de gevallen kan leveren aan je klant.
+	• Orderkosten: gegevens ingeven, kijken wat er gebeurt aan de los- en laadkade
+	• Opvolging: software/hardware om bv te kijken ofboeken in een bibliotheek binnenkomen/buitengaan kost ook geld.
+Slide 9: als we kijken naar kosten moeten we 2 zaken afwegen: voorraadkosten en naarmate de lotgrootte stijgt, zullen we grotere voorraden krijgen. Kleinere batches zorgen voor kleinere voorraadkosten, maar dit kan zorgen voor grotere omstelkosten (== bestelkosten). Het is deb edoeling om die 2 tov elkaar af te wegen. Als je de totale kost neemt, ga je het minimum zoeken en dat is het punt waarbij je totaal genomen de kleinste voorraadkost en bestelkost hebt. 
+Slide 10: We hebben verschillende soorten modellen. Wij gaan enkel kijken naar de statische modellen. Voor de dynamische heb je modelleringsmodellen nodig.
+We gaan voorbeelden bekijken waarbij we kijken naar uniforme constante vraag over de tijdshorizon. Hierbij gaan we kijken naar het eindprodcut en niet naar de onderliggende delen. Als jenaar de onderliggende delen kijkt (? 17.00).
+Slide 11: We beginnen met het basismodel. We nemen aan dat de vraag gekend, deterministisch en constant is. De lotgrootte q gaan we proberen te betalen. Deze isconstant en wordt bijgesteld wnr nodig. De voorraad wordt bijgevuld wnr het voorraadniveau 0 is. We nemen aan dat de doorlooptijd om de voorraad heraan te leggen 0 is (dus nieuwe voorraad wordt besteld en is direct in huis).
+Slide 12: zaagtandpatroon: elke keer als de voorraad 0 is, bestellen we bij. Dan halen we producten uit het magazijn. De vraag is cst dus het verloopt lineair. We gaan een bepaalde cyclus hebben en na periode T bestellen we bij. 
+We hebben voorraadkosten die gekoppeld zijn aan de batchkosten en de periodes T. die gaan we moeten afwegen tov elkaar.
+Kijken we naar onze gegevens, hebben we een bepaalde kost r, we kopen het product aan aan een kost c. we merken dat die totaal onafhankelijk is van onze batchgrootte (we krijgen geen korting bij grotere hoeveelheden). Dat is onze aankoopkost. We zullen een orderkost hebben en een voorraadkost. De voorraadkost is gegeven en de orderkost ook (op de vorige slide). De vraag isnu wat de voorraadkost is.
+
+
+
+%TODO figuur 3
+
+We willen de jusite waarden vinden voor A, dus:
+
+%TODO figuur 4
+
+
+
+
+
+
+
+
+Naarmate de orderkost groter wordt, willen we minder bestellingen plaatsen, dus grotere batches (vandaar cp in de teller). Als de voorraadkosten groter worden, gaan we minder voorraad willen hebben, dus daarom ch in de noemer.
+Bekijken we een paar specifieke zaken verder:
+
+
+
+
+
+
+
+
+%TODO figuur 5
+
+
+
+
+
+Slide 14: De vraag is gekend, dus je kijkt hoe lang het duurt voor je voorraad voor x dagen opgebruikt is. Je bestelt op voorhand zodat je geen voorraadtekort krijgt.
+Slide 15: Je moet ervoor zorgen dat alle gegevens er staan met de juiste dimensies. Spreken we over jaarvragen, moeten we ook kijken naar jaarlijkse opportuniteitskosten. We gaan het voorbeeld uitwerken:
+
+
+
+
+
+
+
+
+
+
+%TODO figuur 6
+%TODO figuur 7
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Slide 16 e.v.: Marvin kan beter meer bestellen.
+Slide 18: We kunnen ook zelf onderdelen gaan produceren, maar dan zijn die onderdelen niet meteen beschikbaar, het duurt een bepaalde tijd vooraleer ze geproduceerd zijn. De vraag is nu of onze productiebatch groter of kleiner gaat zijn. Nemen we in de piek H als de hoogte van de voorraad 
+
+%TODO figuur 8
+
+We krijgen: %TODO wegdoen
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Als p oneindig is, zijn die twee aan elkaar gelijk (q en H).
+We kunnen de formule dus omvormen tot:
+
+
+
+
+%TODO figuur 9
+
+
+
+
+
+
+
+p moet groter zijn dan r, anders kan de productie niet voldoen aan de vraag.
+Slide 20: We kijken eerst naar een systeem waarbij we korting krijgen voor alle eenheden die we aankopen, daarna naar modellen waarbij we korting krijgen vanaf een bepaalde hoeveelheid.
+Kijken we naar een verduidelijkend voorbeeld: 
+
+
+
+%TODO figuur 10
+
+
+
+
+
+
+De rc zal nu wel variëren, zal een functie zijn van q. hier zal het dus afhankelijk zijn van onze bestelgrootte.
+Als we aannemen dat de drie kostenfuncties alledrie geldig zijn en we tekenen de volledige kostenfunctie uit, dan merken we dat we 3 curvers hebben, waarbij die met de hoogste aankoopkost bovenaanligt en de laagste aankoopkost onderaan. Die curvers snijden elkaar niet in de tweede figuur. De curves zijn enkel geldig in de gemarkeerde gebieden. 
+
+%TODO figuur 11
+
+Hoe kunnen we nu starten om de optimale oplossing te vinden? 
+De drie curves snijden mekaar niet en c3 is de laagste en de andere twee liggen erboven. Als dit voldoet aan de voorwaarden, moet je de andere curven niet meer bekijken want het optimum ligt in het minimum van c3. we zullen dus onderaan starten met de derde curve en kijken of dat optimale punt voldoet aan de eisen. Als het aan de rand ligt zoals op de afbeelding, zijn we niet zeker of het laagste puntdaar lager ligt dan bij de tweede laagste. Is dit buiten het bruikbaar gebied, ga je weer naaar boven werken.
+We bemerken ook dat als we de 3 curves met elkaar vergelijken, dan verschuift het minimum naar links. 
+Als we de curven tekenen en de aankoopkosten wijzigen, dan wijzigen ook de curven. Als de aankoopkost daalt, daalt de voorraadkost, zal de optimale hoeveelheid stijgen:
+
+
+
+
+
+%TODO figuur 12
+
+
+
+
+
+
+
+
+Voorbeeld:
+
+
+
+
+
+
+%TODO figuur 13
+
+
+
+
+
+
+
+
+We hebben hier dus het minimum van de onderste curve genomen.
+We zijn niet zeker dat we het optimale punt hebben, dus we berekenen q2* <NOTE TO SELF: TWEE KLEIN, STER MACHT>:
+
+
+
+%TODO figuur 14
+
+
+
+
+
+
+
+
+Bij q*3 kopen we voor meer dan een jaar aan voorraad, je moet dan zeker zijn dat er geen plotse daling in verkopen zal zijn. Soms is het dus beter om het duurdere (q*2 in dit geval) te nemen, omdat je minder voorraad zal overhebben. Een verschil van 5 is vrij klein, dus het is zeker werkbaar. Je moet altijd kijken naar alle factoren. In dit geval is het dus beter om iets meer te betalen maar minder lang met voorraden te zitten.
+Slide 21: Bij incrementele korting gaan de curves mekaar snijden. Men heeft kunnen bewijzen dat de snijpunten nooit optimaal kunnen zijn. We gaan intuïtief bekijken hoe d eformule in elkaar zit.
+We moeten alle kostencurves doorrekenen en enkel de kostencurves waarbij we een optimum vinden binnen de marges, daarmee gaan we verderwerken. We gaan hier ook werken met de EOQ-formule.
+Uw voorraadwaarde gaat hier niet meer lineair zijn zoals bij alle eenheden die korting krijgen.
+We komen tot volgende formule:
+
+
+
+%TODO figuur 15
+%TODO figuur 16
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Slide 22: Dikwijls zal het zo zijn dat er beperkingen zijn (we hebben niet maar 1 product bv) en zal er interactie zijn tussen verschillende systemen. We gaan hierbij gebruik maken van lagrange-relaxatie. 
+
+
+
+
+
+
+
+
+
+%TODO figuur 17
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Je kan lambda bepalen, maar de noemers zijn aan elkaar gelijk. Wanneer je zit met een budgetbeperking, zal die evenredig zijn over de verschillende producten (denk ik).
+We vinden dat q1= 36 en q2 = 40. ze zijn op een gelijkaardige manier gedaald. 
+Op die manier kan men relaties inbrengen waarbij producten aan elkaar gekoppeld zijn. Men kan ook meerdere beperkingen inbouwen.
 
 
 \end{document}
