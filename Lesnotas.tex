@@ -1190,24 +1190,42 @@ We hebben zeer eenvoudige modellen gezien, er zijn er natuurlijk ook complexere.
 \paragraph{Slide 72:} Onze voorspelling zal juist zo zijn dat we die nodig hebben voor onze voorraadbeheer en ons productieplan. Kijken we naar de voorraad, kijken we naar de eindvoorraad. Als die eindvoorraad is vastgelegd, gaan we daaraan de productie koppelen. Bij de inventory gaan we andere assumpties maken dan bij de productie.
 
 \chapter{Les 12}
-Slides: 11
+\section{Slides: 11\_Bedrijfskunde\_Productie- en voorraadcontrolesystemen(1)}
 
-Slide 2: We gaan een voorraadpolitiek vastleggen. Obv daarvan kijken we naar het productieplan zelf.De eerste 4 systemen worden allemaal gebruikt om productie aan te sturen. 
-Slide 4: Voorraadbeheer is van belang omdat de verkoop (en voorraad) gekoppeld is aan de financiele cyclus van het bedrijf. We willen dat de voorraadrotatie klein is zodat de financiele cyclus ook klein is. Het is de bedoeling dat de cirkel zo snel mogelijk rond is en het geld zo snel mogelijk opnieuw binnenkomt.
-Slide 5: We gaan kijken naar voorraden omdat zelfs als de vraag volledig deterministisch zou zijn en gekend zou zijn, gaan we toch gebruik maken van voorraden. De redenen zijn gegeven in het lijstje:
-	• Schaalvoordelen: naarmate we meer stuks maken, kunnen we de vaste kosten verdelen over al die stuks, waardoor de kost per stuk lager is:
+\paragraph{Slide 2:} We gaan een voorraadpolitiek vastleggen. Op basis daarvan kijken we naar het productieplan zelf. De eerste 4 systemen worden allemaal gebruikt om productie aan te sturen. 
 
-%TODO figuur 1	
+\paragraph{Slide 4:} Voorraadbeheer is van belang omdat de verkoop (en voorraad) gekoppeld is aan de financi\"ele cyclus van het bedrijf. We willen dat de voorraadrotatie klein is zodat de financi\"ele cyclus ook klein is. Het is de bedoeling dat de cirkel zo snel mogelijk rond is en het geld zo snel mogelijk opnieuw binnenkomt.
+
+\paragraph{Slide 5:} We gaan kijken naar voorraden omdat zelfs als de vraag volledig deterministisch en gekend zou zijn, we toch gebruik gaan maken van voorraden. De redenen zijn gegeven in het lijstje:
+\begin{itemize}
+\item Schaalvoordelen: naarmate we meer stuks maken, kunnen we de vaste kosten verdelen over al die stuks, waardoor de kost per stuk lager is: zie Figuur \ref{les12_01}.
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=90mm]{Les12_01.png}
+\caption{Les 12 Slide 5 (1)} 
+\label{les12_01}
+\end{figure}	
 	
-	• Onzekerheid in levertermijn: er zit een bepaalde spreiding op wanneer de leverancier levert. Je moet zorgen dat als de leverancier aan de late kant, is je toch nog kan produceren.
-	• Speculatie: als je weet dat accijnzen bv gaan stijgen, ga je voorraden aanleggen.
-	• Transport
-	• Uitvlakken productie:
-	%TODO figuur 2
-	• Logistiek
-	• Controlekosten: je moet betalen per controle, dus als je meer in een keer kan laten controleren, zal het goedkoper zijn.
-Slide 6: We moeten altijd controleren hoe wer verkopen: soms meer, soms minder. We moeten continu controleren wat er gebeurt met de voorraad. 
-Slide 7: er bestaan verschillende systemen. Het eerste gaat periodiek kijken wat er gebeurt met de voorraad. Ongeacht wat er gebeurt, we gaan pas kijken op t1 en daarna op t2. we merken dat we een target niveau hebben (max. niveau van voorraad dat we willen), maar ook een reorder point: zodra we hieronder komen, gaan we bijbestellen. De restvoorraad zal onvoldoende zijn om de cyclus te overbruggen. Je bemerkt dat we controleren op t1 en t2, bij t2 ziek we dat we moeten bijbestellen. Het kan ook zijn dat de voorraad vee drastischer gaat dalen, waarbij je negatieve voorraad kan hebben, waarbij je niet kan voldoen aan de vraag.
+\item Onzekerheid in levertermijn: er zit een bepaalde spreiding op wanneer de leverancier levert. Je moet zorgen dat als de leverancier aan de late kant is, je toch nog kan produceren.
+\item Speculatie: als je weet dat accijnzen bv. gaan stijgen, ga je voorraden aanleggen.
+\item Transport
+\item Uitvlakken productie: zie Figuur \ref{les12_02}.
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=90mm]{Les12_02.png}
+\caption{Les 12 Slide 5 (2)} 
+\label{les12_02}
+\end{figure}
+
+\item Logistiek
+\item Controlekosten: je moet betalen per controle, dus als je meer kan laten controleren in een keer, zal het goedkoper zijn.
+\end{itemize}
+
+\paragraph{Slide 6:} We moeten altijd controleren hoe we verkopen: soms meer, soms minder. We moeten continu controleren wat er gebeurt met de voorraad. 
+
+\paragraph{Slide 7:} Er bestaan verschillende systemen. Het eerste gaat periodiek kijken wat er gebeurt met de voorraad. Ongeacht wat er gebeurt, we gaan pas kijken op $t_{1}$ en daarna op $t_{2}$. We merken dat we een target niveau hebben (max. niveau van voorraad dat we willen), maar ook een reorder point: zodra we hieronder komen, gaan we bijbestellen. De restvoorraad zal onvoldoende zijn om de cyclus te overbruggen. Je bemerkt dat we controleren op $t_{1}$ en $t_{2}$, bij $t_{2}$ zien we dat we moeten bijbestellen. Het kan ook zijn dat de voorraad veel drastischer gaat dalen, waarbij je negatieve voorraad kan hebben, waarbij je niet kan voldoen aan de vraag. %TODO tot hier
 Een ander systeem is het continu herzien: continue kijken in ons magazijn hoe de voorraad is. We zien dat onze voorraad daalt en dat we ons reorder point naderen, dus we gaan opnieuw bijbestellen. Als de voorraad nu heel snel daalt, gaan we snel kunnen bijbestellen. 
 Het systeem van continu herzien zal veel duurder zijn dan periodiek herzien. Men gebruikt bij continu herzien vaak RFID of barcodes. Men zal continu herzien gebruiken voor kritieke stukken, wanneer tekorten daarbij grote implicaties heeft voor de klanten. Voor standaardstukken ga je periodiek herzien gebruiken, waarbij het wel eens (een beetje) mag foutlopen.
 Slide 8: Aan de ene kant is het nuttig om zoiets te hebben omdat we zo flexibel kunnen zijn, maar anderzijds gaan we ook een hele reeks kosten hebben. Die kosten hebben te maken met
