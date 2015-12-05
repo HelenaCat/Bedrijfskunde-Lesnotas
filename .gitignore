@@ -127,6 +127,7 @@ sympy-plots-for-*.tex/
 
 # afbeeldingen
 *.png
+*.jpg
 
 # oefenzittingen
 Les6Oefenzitting1.pdf
