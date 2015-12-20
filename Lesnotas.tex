@@ -1534,7 +1534,7 @@ We gaan kijken naar 11. Hierbij willen we het MRP gebeuren bekijken voor dat ond
 \paragraph{Slide 60:} Vanboven zien we de MPS voor een touch phone. Kijken we naar onze voorraad: we starten met 1200, er komen er 400 bij dus we komen op een totaal van 1600. Vanaf week 4 hebben we een tekort. We zullen dus moeten produceren vanaf week 4. Het productieplan hangt af van de lotgrootte. We gaan aannemen dat het bedrijf al berekeningen heeft gemaakt en we gaan een lotgrootte aannemen van 3000. 
 
 \paragraph{Slide 61:} %De nettobehoefte zal zich niet meer voordoen omdat we (? 1.5.20).
-Er komen in week 4 3000 stuks bij, er gaan er 1000 buiten en er blijven er 2900 over. Dit is voldende om de vraag van week 5 te voldoen. De overschot is onvoldoende om aan de vraag van week 6 te voldoen, dus produceren we weer. Dit wil zeggen dat wanneer we naar Planned receipts kijken, we daar aangeven wanneer stukken nodig zijn om te kunnen werken.\\ 
+Er komen in week 4 3000 stuks bij, er gaan er 1000 buiten en er blijven er 2900 over. Dit is voldende om de vraag van week 5 te voldoen. De overschot is onvoldoende om aan de vraag van week 6 te voldoen, dus produceren we niet in week 5. Dit wil zeggen dat wanneer we naar Planned receipts kijken, we daar aangeven wanneer stukken nodig zijn om te kunnen werken.\\ 
 Als we rekening moeten houden met doorlooptijden, moeten we onze orders vroeger geven. Daarom hebben we de laatste rij: het duurt 2 weken vooraleer het stuk is afgewerkt. We moeten met het onderliggende niveau 2 weken vroeger starten om te zorgen dat onze 3000 stuks op tijd klaar kunnen zijn. Zolang je bemerkt dat die ordervrijgaves niet voorbij week 1 komen (naar links), dan zal je te laat zijn en uw planning moeten aanpassen.\\ 
 Indien we met lot per lot gewerkt hadden, hadden we een ander plan gekregen. We hadden dan overal een voorraad 0 gekregen vanaf week 4 en dan zouden onze planned receipts gelijk zijn aan de net requirements.
 
@@ -1547,10 +1547,10 @@ We bemerken dat naarmate je dieper in de tabellen/niveau's gaat, de achterkanten
 Je moet oppassen met het feit dat
 \begin{itemize}
 \item onderdelen op verschillende plaatsen kunnen voorkomen (zoals product D). Het kan ook zijn dat een onderdeel voor 2 totaal verschillende producten nodig is. 
-\item we nu rekenen van boven naar onder. Je moet zorgen dat je niet zonder stukken komt te zitten (dat uw doorlooptijd voor uw current periode valt). Als er stukken tekort zijn, moet je kijken waarop dat impact heeft. Als er voorraad tekort is, moet je gaan beslissen waar je zaken gaat aanpassen. Het kan zijn dat je voldoende voorraad hebt voor 1 onderdeel (ondanks het tekort van een deelgrondstof), dan kan je toch beslissen om uw lotgrootte van dat onderdeel aan te passen. Je moet kijken wat je van voorraaden hebt en kijken naar de consequenties voor elk van de producten en de contracten die je met klanten hebt afgesloten. 
+\item we nu rekenen van boven naar onder. Je moet zorgen dat je niet zonder stukken komt te zitten (dat uw doorlooptijd voor uw current periode valt). Als er stukken tekort zijn, moet je kijken waarop dat impact heeft. Als er voorraad tekort is, moet je gaan beslissen waar je zaken gaat aanpassen. Het kan zijn dat je voldoende voorraad hebt voor 1 onderdeel (ondanks het tekort van een deelgrondstof), dan kan je toch beslissen om uw lotgrootte van dat onderdeel aan te passen. Je moet kijken wat je van voorraden hebt en kijken naar de consequenties voor elk van de producten en de contracten die je met klanten hebt afgesloten. 
 \end{itemize}
 
-\paragraph{Slide 65:} Doorlooptijden zijn van belang. Een van de kritieken op MRP is dat we zitten met een constante doorlooptijd. Het is van belang dat we weten wat het batching effect en saturatieeffect betekent. Er wordt altijd gezegd dat als  de lotgrootte stijgt,  de doorlooptijd zal stijgen. Als we onze lotgrootte kleiner zouden maken, zulen de omsteltijden globaal groter worden en zal de doorloopcurve weer stijgen. Dit noemen we batching: zie Figuur \ref{les13_06}.
+\paragraph{Slide 65:} Doorlooptijden zijn van belang. Een van de kritieken op MRP is dat het een constante doorlooptijd veronderstelt. Het is van belang dat we weten wat het batching effect en saturatieeffect betekent. Er wordt altijd gezegd dat als  de lotgrootte stijgt,  de doorlooptijd zal stijgen. Als we onze lotgrootte kleiner zouden maken, zulen de omsteltijden globaal groter worden en zal de doorloopcurve weer stijgen. Dit noemen we batching: zie Figuur \ref{les13_06}.
 
 \begin{figure}[h!]
 \centering
@@ -1561,19 +1561,19 @@ Je moet oppassen met het feit dat
 
 \paragraph{Slide 67:} We hebben een volledige planning opgesteld waarbij we weten wanneer bepaalde stukken nodig zijn en orders bijgegeven moeten worden. Je moet opletten dat de materialen beschikbaar zijn: hiervoor het juiste schema opstellen. Je moet bijhouden wat er uit de machine komt en of alles afgewerkt is zoals verwacht. Je moet ook rekening houden met het aanpassen van de gegevens in het systeem.
 
-\paragraph{Slide 68:} Als je kijkt naar het systeem zal je een kant hebben dat zich bezighoudt met de voorraden. Je zal een bestand hebben dat zich bezighoudt met de structuur van de producten en een bestand dat zich bezighoudt met de vraag en dan zul je rapporten krijgen over uw oders.
+\paragraph{Slide 68:} Als je kijkt naar het systeem zal je een kant hebben dat zich bezighoudt met de voorraden. Je zal een bestand hebben dat zich bezighoudt met de structuur van de producten en een bestand dat zich bezighoudt met de vraag en dan zul je rapporten krijgen over uw orders.
 
 \paragraph{Slide 69:} Distributie-behoeftenplanning: MRP gaat vertrekken vanaf het eindproduct en die onderverdelen in onderdelen. DRP gaat van vanonder werken. Het komt erop neer dat wat je daar krijgt als de brutobehoefte, je kan beschouwen als de vraag naar het hoofdproduct in MRP.\\
 Voordelen:\\
 $\oplus$ Je kan kijken wat de impact is van verschillende productieplannen.\\
-$\oplus$ Doordat men voorraden en planningen ocntroleert, gaat men lagere voorraden krijgen.
+$\oplus$ Doordat men voorraden en planningen controleert, gaat men lagere voorraden krijgen.
 
 \paragraph{Slide 70:} Tekortkomingen:\\
-$\ominus$ Te weinig productiecapaciteit.
-$\ominus$ Systeemaanpassingen (nervositeit): als je elke periode uw plan aanpast, gaat dat een impact hebben op uw productieplan. 
+$\ominus$ Te weinig productiecapaciteit.\\
+$\ominus$ Systeemaanpassingen (nervositeit): als je elke periode uw plan aanpast, gaat dat een impact hebben op uw productieplan. \\
 $\ominus$ We moeten oppassen met de integriteit van de data: je kan niet zeker zijn dat alle beschikbare data correct is.
 
-\paragraph{Slide 71:} Naddelen van het systeem: capaciteitsbeperkingen. We gaan ook altijd orders vrijgeven zonder rekening te houden met de capaciteitsbeperking. We hebben hier een soort push-systeem: we duwen orders door een systeem en die moeten er maar als afgewerkt product uitkomen. Bij JIT werken we met pull-systemen: er wordt alleen geproduceerd wanneer er vraag is. 
+\paragraph{Slide 71:} Nadelen van het systeem: capaciteitsbeperkingen. We gaan ook altijd orders vrijgeven zonder rekening te houden met de capaciteitsbeperking. We hebben hier een soort push-systeem: we duwen orders door een systeem en die moeten er maar als afgewerkt product uitkomen. Bij JIT werken we met pull-systemen: er wordt alleen geproduceerd wanneer er vraag is. 
 
 \chapter{Les 14}
 \section{Slides: 11\_Bedrijfskunde\_Productie- en voorraadcontrolesystemen(1)}
@@ -1618,7 +1618,7 @@ Dit wil zeggen dat ook al liggen er in rode A 50 stuks en doet het werkcentrum n
 \label{les14_01}
 \end{figure}
 
-De vraag achteraan is dus bepalend voor de doorlooptijd. Als je werkt met kleinere batches, zal uw doorlooptijd ook kleiner worden, maar uw transporttijd blijft wel gelijk. Als we bv. werken met batches van 5, gaan onze doorlooptijden halveren en de doorlooptijd wordt nu 10 uur. Door het werk in omloop met de helft te laten dalen, daalt onze doorlooptijd ook met de helft. We krijgen dan 12 bewegingen van 5 stuks om an de 60 te voldoen en er wordt om de 2 uur iets voldaan en we gaan dus maar 10 uur nodig hebben. \\
+De vraag achteraan is dus bepalend voor de doorlooptijd. Als je werkt met kleinere batches, zal uw doorlooptijd ook kleiner worden, maar uw transporttijd blijft wel gelijk. Als we bv. werken met batches van 5, gaan onze doorlooptijden halveren en de doorlooptijd wordt nu 10 uur. Door het werk in omloop met de helft te laten dalen, daalt onze doorlooptijd ook met de helft. We krijgen dan 12 bewegingen van 5 stuks om aan de 60 te voldoen en er wordt om de 2 uur iets voldaan en we gaan dus maar 10 uur nodig hebben. \\
 Indien je de posten samenneemt en maar 3 kaarten nodig hebt, ga je nog sneller kunnen werken (3 bewegingen) en ga je maar 6 uur nodig hebben. 
 
 \paragraph{Slide 82:} Deze modellen worden gebruikt bij flow problemen waarbij de vraag redelijk constant is. 
@@ -1644,7 +1644,7 @@ Je moet er ook op letten dat je kosten aan 2 kanten hebt: als je stuk te vroeg k
 \paragraph{Slide 88:} Verduidelijkend vb. 
 
 \paragraph{Slide 89:} Die 11 kaarten zijn transport en productie samen, dus je moet die ook nog gaan opsplitsen. Je moet nagaan waar je alle kaarten gaat plaatsen. Je kunt in dit vb. per stap 1 functiekanbankaart nemen. Als je de machines samenneemt, kan je 3 kaarten gebruiken (dus 1 voor het hele proces).\\
-Je moet altijd oppassen met de berekeningen. We kunnen het systeem als een volledig systeem (machine 1,2,3 samennemen). Je kan ook machine per machine bekijken. Het grote verschil zal zijn dat je je wachtijden misschien niet kent als je alle machines apart neemt. Als je werkt met het aantal kaarten per systeem apart, dan kan je vinden dat n = 0,1. Dit betekent dat je 1 kaart zult moeten gebruiken, maar ook dat die machine weinig bezet is (vandaar dat je met 1 kaart toekomt). Je moet de formule gebruiken, maar weten op welke manier je die gebruikt (globaal of apart).
+Je moet altijd oppassen met de berekeningen. We kunnen het systeem als een volledig systeem (machine 1, 2, 3 samennemen) zien. Je kan ook machine per machine bekijken. Het grote verschil zal zijn dat je je wachtijden misschien niet kent als je alle machines apart neemt. Als je werkt met het aantal kaarten per systeem apart, dan kan je vinden dat n = 0,1. Dit betekent dat je 1 kaart zult moeten gebruiken, maar ook dat die machine weinig bezet is (vandaar dat je met 1 kaart toekomt). Je moet de formule gebruiken, maar weten op welke manier je die gebruikt (globaal of apart).
 
 \paragraph{Slide 90:} CONWIP: Constant work in process: we zorgen dat we telkens hetzelfde werkvolume hebben in onze productielijn.
 
@@ -1652,7 +1652,7 @@ Je moet altijd oppassen met de berekeningen. We kunnen het systeem als een volle
 Bovenaan werd het alleen verwerkt als er een kaart was. Nu hebben we 1 kaart die zowel transport als productie behandelt. Elke keer als we buitenkomen, gaan we herbeginnen. Het aantal kaarten bepaalt dus wat het aantal producten is dat rondgaat in de productie, het bepaalt wat er in omloop is.\\
 Dergelijk systeem gaat men gebruiken als de vraag van de klant groter is dan de productie aankan: we werken met een bottleneck. Er is een machine die ervoor zorgt dat we niet kunnen leveren wat er gevraagd wordt.\\
 Aangezien we liefst zoveel mogeijk willen produceren en we beperkt zitten qua aantal, moeten we ervoor zorgen dat onze bottleneckmachine zoveel mogelijk produceert. \\
-Nemen we de productielijn en nemen we aan dat we werken met een batch van 1 stuk. We hebben 3 machines met doorloptijden 6 min, 8 min en 7 min. Als er een kaart vrijkomt, zal de kaart dus terug binnenkomen bij de eerste machine. Onze bottleneck (machine 2) zal bepalen wat onze output is: nl. om de 8 minuten zal er een product van de lijn afkomen. We willen ervoor zorgen dat de bottleneck continu aan het werk blijft, deze mag dus niet wachten op producten. Vandaar moeten we bepalen hoeveel kaarten we nodig hebben. We gaan 3 kaarten nodig hebben: een kaart die vanaf machine 2 vertrekt is 13 minuten onderweg om terug te komen bij machine 2. 1 extra kaart wil zeggen 8 minuten bezig, dus we hebben 2 extra kaarten nodig, want anders ziten we onder de 13 minuten. Kijken we naar de Gantt-chart: zie Figuur \ref{les14_03}.\\
+Nemen we de productielijn en nemen we aan dat we werken met een batch van 1 stuk. We hebben 3 machines met doorloptijden 6 min, 8 min en 7 min. Als er een kaart vrijkomt, zal de kaart dus terug binnenkomen bij de eerste machine. Onze bottleneck (machine 2) zal bepalen wat onze output is: nl. om de 8 minuten zal er een product van de lijn afkomen. We willen ervoor zorgen dat de bottleneck continu aan het werk blijft, deze mag dus niet wachten op producten. Vandaar moeten we bepalen hoeveel kaarten we nodig hebben. We gaan 3 kaarten nodig hebben: een kaart die vanaf machine 2 vertrekt is 13 minuten onderweg om terug te komen bij machine 2. 1 extra kaart wil zeggen 8 minuten bezig, dus we hebben 2 extra kaarten nodig, want anders zitten we onder de 13 minuten. Kijken we naar de Gantt-chart: zie Figuur \ref{les14_03}.\\
 
 \begin{figure}[h!]
 \centering
@@ -1663,7 +1663,7 @@ Nemen we de productielijn en nemen we aan dat we werken met een batch van 1 stuk
 
 Machine 2 zal continu aan het werk zijn. Bij machine 3 heb je telkens 1 tijdseenheid pauze en bij machine 1 heb je telkens 2 tijdseenheden pauze. Je hebt dus wel degelijk 3 kaarten nodig om de machine degelijk te laten werken.\\
 Je kan het ook berekenen door (6+8+7)/8 = 2.625 (dus 3).\\
-We weten dat onze cyclustijd in dit geval gelijk is aan 8 minuten. Om de 8 minuten zal er een stuk van de lijn komen. Wat is dan de doorooptijd? 21 minuten voor de bewerking, daar komt nog de wachttijd bij (machine 1 is klaar om 21 en machine 2 kan om 24 starten, zie Gantt chart). De job gekoppeld aan machine 1 moet 3 minuten wachten voor machine 2 kan starten. Tussen machine 2 en 3 is er geen wachttijd. Je moet dus nog 3 minuten wachttijd meerekenen. Je kan dit ook berekenen door de cyclustijd maal het aantal kaarten te doen: 8 * 3 = 24.\\
+We weten dat onze cyclustijd in dit geval gelijk is aan 8 minuten. Om de 8 minuten zal er een stuk van de lijn komen. Wat is dan de doorlooptijd? 21 minuten voor de bewerking, daar komt nog de wachttijd bij (machine 1 is klaar om 21 en machine 2 kan om 24 starten, zie Gantt chart). De job gekoppeld aan machine 1 moet 3 minuten wachten voor machine 2 kan starten. Tussen machine 2 en 3 is er geen wachttijd. Je moet dus nog 3 minuten wachttijd meerekenen. Je kan dit ook berekenen door de cyclustijd maal het aantal kaarten te doen: 8 * 3 = 24.\\
 Wat zou er gebeuren als we 4 kaarten zouden hebben? We zullen om de 8 minuten een product krijgen (CT blijft gelijk), en de verwerkingstijd blijft dezelfde (21 minuten), de wachttijd zal echter stijgen (11 minuten).\\ 
 Men gaat altijd proberen te gaan naar lagere voorraden zodat de doorlooptijden lager worden. 
 We hebben nog niet in rekening genomen dat er omstellingen gebeuren.
@@ -1690,7 +1690,7 @@ Zie volgende pagina voor handgeschreven nota's.
 Kijken we naar de omsteltijden, dan gaan er aspecten aan bod komen van hoe we dit gaan toepassen, wat vernieuwd moet worden,…\\
 1 belangrijk punt staat hier niet tussen: communicatie: je moet werken met mensen op de werkvloer. Je moet zaken gaan meten en nagaaan wat er gebeurt. Mensen worden niet graag gecontroleerd, maar je moet aangeven waarom bepaalde zaken gebeuren.
 
-\paragraph{Slide 101:} Als we zo'n reductie willen dorovoeren, volgen we een vast stramien. We zetten interne en externe setups op. Dan zetten we interne naar externe om.
+\paragraph{Slide 101:} Als we zo'n reductie willen doorvoeren, volgen we een vast stramien. We zetten interne en externe setups op. Dan zetten we interne naar externe om.
 We gaan alles proberen te reduceren. \\
 Intern: gebeurt op het moment dat de machine stilligt en draagt bij aan de totale stilstand van de machine. Als we werken met een bak lijm waarin verschillende soorten lijm moeten, dan zijn we tijd kwijt bij het wisselen van de lijmbak. Je kan ook en nieuwe bak water gaan halen terwijl de machine nog bezig is, dan is het water-halen een externe gebeurtenis: heeft geen invloed op uw omsteltijd. \\
 Om te weten wat er allemaal gebeurt (wat intern en extern is), hebben we eerst een fase die daaraan vooraf gaat: interviews met alle werknemers: waarom doen we die omsteltijdreductie en hoe kunnen we dat gaan doen? Interviews met werknemers en de bazen die die vraag gesteld hebben. Je gaat alle punten van de omstellingen bespreken (je kan allemaal verschillende antwoorden krijgen over wat er gebeurt: verschillende manieren om omstellingen door te voeren). Je gaat ook moeten meten hoe lang de productie duurt. Je wil de interne setuptijden reduceren. Als je dat hebt utigewerkt, moet je dat bespreken met de mensen, welke veranderingen doorgevoerd gaan worden. 
@@ -1700,7 +1700,7 @@ Om te weten wat er allemaal gebeurt (wat intern en extern is), hebben we eerst e
 \paragraph{Slide 103:} Bottlenecksystemen: de output is beperkt door een bepaalde bottleneck. 
 
 \paragraph{Slide 104:} We gaan het hebben over OPT en TOC: we hebben beperkingen die ons dwingen tot een bepaalde assortimentkeuze omdat we niet meer alles kunnen produceren.\\
-Beperking: eender wat de output gaat beperkten. Kan een machine zijn, de markt,…\\
+Beperking: eender wat de output gaat beperken. Kan een machine zijn, de markt,…\\
 We hebben reeds een bottleneck gezien: CONWIP.
 
 \paragraph{Slide 105 $\&$ 106:} We gaan echte bottlenecks zien en capaciteitsbeperkingen.
@@ -1708,7 +1708,7 @@ OPT: je moet op een aantal zaken letten:
 \begin{enumerate}
 \item Gebalanceerde flow en niet de capacitiet: als je 3 machines in serie hebt, en die zijn allemaal even lang beschikbaar, dan zegt dat niets. Je moet weten hoeveel stuks per uur elke machine kan verwerken. Je moet ervoor zorgen dat uw machinepark alles mooi kan doorstromen. Je moet kijken naar de stroom doorheen de machines en die op elkaar afstemmen.
 \item Als we een planning opstellen, zal de bottleneck alles aansturen. De machines die vrije tijd hebben, moeten luisteren naar de bottleneck.
-\item Je kan de bezettingsgraad en de activatie bekijken. We kunnen veel produceren (hoe?), maar het is niet omdat we veel kunnen prodcueren, dat we veel moeten produceren. Activatie: wat we echt produceren, utilisatie: wat we kunnen produceren. Deze moeten niet per s\'e aan elkaar gelijk zijn! De manier waarop we performantie gaan bekijken verschilt per bedrijf. Soms is activatie veel belangrijker: alleen produceren wat echt nodig is.
+\item Je kan de bezettingsgraad en de activatie bekijken. We kunnen veel produceren (hoe?), maar het is niet omdat we veel kunnen produceren, dat we veel moeten produceren. Activatie: wat we echt produceren, utilisatie: wat we kunnen produceren. Deze moeten niet per s\'e aan elkaar gelijk zijn! De manier waarop we performantie gaan bekijken verschilt per bedrijf. Soms is activatie veel belangrijker: alleen produceren wat echt nodig is.
 \item Als de bottleneck in panne valt, ben je tijd verloren. Je moet ervoor zorgen dat uw bottleneck zo goed mogelijk gepland wordt en dat het onderhoud zo goed mogelijk gepland wordt.
 \item Als je een andere machine hebt die geen bottleneck is en meer kan produceren, zal dat niet helpen tenzij de bottleneck meer kan produceren.
 \item Aan de bottleneck liggen er voorraden.
@@ -1737,23 +1737,23 @@ Als je rekening houdt met het feit dat we dit niet kunnen produceren, zal de act
 
 \paragraph{Slide 112:} Er bestaat software voor OPT. Het komt erop neer dat je moet gaan kijken naar 
 \begin{itemize}
-\item uw interne beperkingen (bottleneck vna een machines).
+\item uw interne beperkingen (bottleneck van een machines).
 \item als je tot de conclusie komt bij een bepaald systeem dat de vraag lager ligt dan wat geproduceerd kan worden, dan is de vraag de bottleneck en niet de machine: externe bottleneck (marktvraag). 
 \item de manier waarop we willen produceren kan ook een beperking zijn.
 \end{itemize}
 
-\paragraph{Slide 113:} Vroeger keek men vooral naar financi\"ele en operationele maatstaven. Nu kijkt men vooral naar de drie vermelde maaatstaven vanonder. Wat valt hier op? voor ons is van belang dat er geld gegenereerd wordt en dit door verkopen. Als je kijkt naar voorraden, heb je die alleen liggen met de bedoeling om te verkopen. Je moet er altijd voor zorgen dat uw cash flow er is en dat kan alleen als je het verkocht krijgt. Alles ligt op de focus van verkoop. $\Rightarrow$ Alleen dingen uitvoeren die nuttig zijn en iets binnenbrengen.
+\paragraph{Slide 113:} Vroeger keek men vooral naar financi\"ele en operationele maatstaven. Nu kijkt men vooral naar de drie vermelde maatstaven vanonder. Wat valt hier op? voor ons is van belang dat er geld gegenereerd wordt en dit door verkopen. Als je kijkt naar voorraden, heb je die alleen liggen met de bedoeling om te verkopen. Je moet er altijd voor zorgen dat uw cash flow er is en dat kan alleen als je het verkocht krijgt. Alles ligt op de focus van verkoop. $\Rightarrow$ Alleen dingen uitvoeren die nuttig zijn en iets binnenbrengen.
 
-\paragraph{Slide 114:} Je gaat dingen aanpassen zodat de bottleneck verdwijnt en eventueel iets anders een bottleneck wordt. Is er een bottleneck, identificeer die (ook als dat de marktvraag is). Als je een bottleneck hebt, ga je er rekening mee houden: hoe kan dat best? $\rightarrow$ assortimentsplanning opstellen en de zaken aanpassen naar de bottleneck. Eens uw planning er is, mogen de andere machines uw bottleneck niet tegenhouden. Je moet ook zorgen dat de bottleneck nooit moet wachten.\\
+\paragraph{Slide 114:} Je gaat dingen aanpassen zodat de bottleneck verdwijnt en eventueel iets anders een bottleneck wordt. Is er een bottleneck, identificeer die (ook als dat de marktvraag is). Als je een bottleneck hebt, ga je er rekening mee houden: hoe kan dat best? $\rightarrow$ Assortimentsplanning opstellen en de zaken aanpassen naar de bottleneck. Eens uw planning er is mogen de andere machines uw bottleneck niet tegenhouden. Je moet ook zorgen dat de bottleneck nooit moet wachten.\\
 Je gaat de bottleneck analyseren en kijken of je de beperkingen kan wegnemen. Dit kan op verschillende manieren: machine n parallel zetten of kijken naar omsteltijden. Je moet kijken hoe je uw bottleneck kan ontlasten.\\
 Eenmaal de bottleneck weg is, zal er een andere bottleneck naar boven komen en begin je opnieuw. Het is niet de bedoeling dit te stoppen.
 
 \paragraph{Slide 116:} 2 producten en een bepaalde vraag.
 
-\paragraph{Slide 117:} Productstructuur. P heeft aankoopprijs van \$45, Q heeft een opbrengst van \$60 per stuk.\\
+\paragraph{Slide 117:} Productstructuur. P heeft een aankoopprijs van \$45, Q heeft een opbrengst van \$60 per stuk.\\
 Hoe ziet ons productieplan eruit? We gaan kijken naar de bezettingen van de verschillende werkcentra. We gaan op dezelfde manier tewerk als bij het voorgaande. 
 
-\paragraph{Slide 118:} Rekenen we door en kijken we naar de belasting per week, dan bemerken we dat werkcentrum B in de problemen raakt en we daar niet kunnen voldoen aan e vraag.
+\paragraph{Slide 118:} Rekenen we door en kijken we naar de belasting per week, dan bemerken we dat werkcentrum B in de problemen raakt en we daar niet kunnen voldoen aan de vraag.
 
 \paragraph{Slide 119:} We kunnen dat gaan aanpakken: kijken naar de verkoopprijs en de winst. Als we een bottleneck hebben, zijn we niet ge\"interesseerd in de winst per stuk, maar de winst per bottleneckmachine. We zullen de volledige productie van P krijgen en slechts een fractie van Q.
 We kunnen dit doen aan de hand van lineair programmeren.\\
@@ -1762,14 +1762,14 @@ S1: spelingsvariabele die aangeeft welke capaciteit niet wordt opgebruikt.
 \paragraph{Slide 122:} We zijn tot de conclusie gekomen dat we de tijd kunnen reduceren tot 1/3. Wat blijkt: doordat machine B zo fel aangepast is geweest, krijgen we nu een nieuwe bottleneck: A. Nu gaan we die moeten aanpassen en kijken wat het interessantste is om te produceren.
 
 \paragraph{Slide 123:} Gezin dat een berg beklimt: vader loopt achterop, kinderen voorop. Op den duur kan het zijn dat er 1/meer kinderen niet meekunnen, terwijl er anderen willen doorlopen $\rightarrow$ bottleneck.\\
-Als iedereen zich dan vastmaakt met een touw (om samen te blijven), wordt de bottleneck wordt nu naar voor getrokken door de snelleren en de snelleren worden tegengehouden door de bottleneck $\rightarrow$ ook niet ideal.\\
-Neem een touw, maar geef de bottleneck een trommel om de maat aan te geven $\rightarrow$ op die manier blijft men mooi bij elkaar zonder dat er iemand weloopt of de bottleneck vooruitgetrokken wordt.\\
+Als iedereen zich dan vastmaakt met een touw (om samen te blijven), wordt de bottleneck wordt nu naar voor getrokken door de snelleren en de snelleren worden tegengehouden door de bottleneck $\rightarrow$ ook niet ideaal.\\
+Neem een touw, maar geef de bottleneck een trommel om de maat aan te geven $\rightarrow$ op die manier blijft men mooi bij elkaar zonder dat er iemand wegloopt of de bottleneck vooruitgetrokken wordt.\\
 We hebben een buffer tussen m en de bottleneck. Het is de bedoeling dat de bottleneck altijd kan blijven doorwerken. Je moet ervoor zorgen dat de bottleneck continu kan blijven doorlopen. Je moet ervoor zorgen dat je voldoende voorraad krijgt. Er is dus informatieoverdracht naar achter toe. Er moet info doorgegeven worden naar het startpunt om eventueel voorraden op te bouwen (extra).
 
-\paragraph{Slide 124:} Capaciteitsbeperkign van een machine: deze zal bepalend zijn voor de output. Je moet zorgen dat die voldoet aan de vraag van de customer (de drum).\\
+\paragraph{Slide 124:} Capaciteitsbeperking van een machine: deze zal bepalend zijn voor de output. Je moet zorgen dat die voldoet aan de vraag van de customer (de drum).\\
 Als je kijkt naar de planning van zo'n machinepark, dan zal CCR alles plannen op 124 en BN bij 123. Vanaf CCR gaan we alles zo snel mogelijk naar buiten krijgen, bij de backward schedule gaat men werken met due dates. Je moet zorgen dat je voldoende stuks hebt: plannen van het einde naar voor met due dates, langs de andere kant werk je naar voor toe.
 
-\paragraph{Slide 126:} We hebben onze bottleneck en we zullen elke keer jobs hebben die aankomen en vertrekken. Rechts (vertrek uit bottleneck) van de bottleneck werken we met dispatching, links met due dates (aankosmt in bottleneck). Zie Figuur \ref{les16_02}.\\
+\paragraph{Slide 126:} We hebben onze bottleneck en we zullen elke keer jobs hebben die aankomen en vertrekken. Rechts (vertrek uit bottleneck) van de bottleneck werken we met dispatching, links met due dates (aankomst in bottleneck). Zie Figuur \ref{les16_02}.\\
 
 \begin{figure}[h!]
 \centering
@@ -1783,9 +1783,9 @@ Aan de andere kant willen we ook weten wanneer de job moet klaar zijn. We weten 
 $d_{i}^{b} = d_{i} - \Sigma p$.
 
 \paragraph{Slide 128:} Voorbeeld: 2 tabellen. Eerste geeft voor elke job en de 4 machines waarop ze verwerkt moeten worden wat de verwerkingstijden zijn. De job met de meeste behoefte aan tijd is job 4.\\
-Je kan ook kijken wat de bezetting van de machines is: machine 3 heeft de hoogste bezettingsgraad. Kijken we naar de makespan: eerste job start tot einde laatste job, zal minimaal 44 zijn want ze moeten allemaal machine 3 passeren. \\
+Je kan ook kijken wat de bezetting van de machines is: machine 3 heeft de hoogste bezettingsgraad. Kijken we naar de makespan: eerste job start tot einde laatste job zal minimaal 44 zijn want ze moeten allemaal machine 3 passeren. \\
 De tweede tabel geeft de routing aan van hoe de jobs over de machines worden geloodst. Er is een jobshop en geen flowshop: elke job volgt een andere route.\\
-Als we kijken naar de tijden die er staan, kunnen we aannemen dat machine 3 de bottleneck zal zijn. De anderen hebben nog tijd over. We zullen machine 3 dus als eerste plannen. \\
+Als we kijken naar de tijden die er staan kunnen we aannemen dat machine 3 de bottleneck zal zijn. De anderen hebben nog tijd over. We zullen machine 3 dus als eerste plannen. \\
 Dit doen we door voor machine 3 het vrijgavemoment en het moment waarop de producten daar afgewerkt zijn te bepalen: zie Figuur \ref{les16_03}.\\
 
 \begin{figure}[h!]
@@ -1840,7 +1840,7 @@ Pull:
 \item Niet-intu\"itieve resultaten: altijd kijken naar uw  bottleneck. Het wordt erger als je zit met een wisselende bottleneck afhankelijk van het assortiment. 
 \end{itemize}
 
-\paragraph{Slide 136:} Combinaties: variaties op werkingstijden in kolom 1, kolom 2 geeft types van systemen, MPS: meestal MRP. Materiaalplanning: meestal MRP 2 gekoppeld aan bill of material die altijd zal voorkomen. Order release: als kleine variatie en productieflow: kan specifiek ontwikkeld worden aan specifiek product: JIT. Anders MRP of OPT. Voor de shop floor zal men meestal JIT gebruiken als er minder variatie is, OPT als er meer variatie is.\\
+\paragraph{Slide 136:} Combinaties: variaties op werkingstijden in kolom 1, kolom 2 geeft types van systemen, MPS: meestal MRP. Materiaalplanning: meestal MRP 2 gekoppeld aan bill of material die altijd zal voorkomen. Order release: als kleine variatie en productieflow: kan specifiek ontwikkeld worden voor een specifiek product: JIT. Anders MRP of OPT. Voor de shop floor zal men meestal JIT gebruiken als er minder variatie is, OPT als er meer variatie is.\\
 Het kan zijn dat je combinaties maakt. Je kan systemen gaan combineren.
 
 \paragraph{Slide 137:} Je mag niet vergeten dat als je zo'n systeem op poten zet, je rekening moet houden met veranderingen die kunnen optreden. Je moet er altijd voor zorgen dat je met aanpassingen kan werken. Je moet uw systemen regelmatig aanpassen aan alle mogelijke veranderingen. 
@@ -1854,13 +1854,13 @@ Het kan zijn dat je combinaties maakt. Je kan systemen gaan combineren.
 
 \paragraph{Slide 140:} Centrale database met alles over mensen die er werken, machineparken, productie, voorraden, werk in omloop, wat klanten besteld hebben,… $\rightarrow$ Toegankelijk voor verschillende functies binnen het bedrijf. We hebben gekeken naar Inventory $\&$ Manufacturing: voorraadbeheer en productie. Ook fincancials $\&$ accounting.\\
 Het bedrijf houdt zich ook bezig met het plannen van mensen: human resources: wie is aanwezig, welke taken kan die uitvoeren, wat is zijn/haar loon,… Er is ook nog de verkoop en distributie: link met de klanten en de leveranciers. Die zullen zorgen dat er op tijd grondstoffen binnenkomen. Ook dit maakt gebruik van de centrale database.\\
-Alles staat centraal en alle gegevens kunnen aangepsorken worden vanuit het centrale punt.
-Het bekendste systeem is dat van SAP (Systemen, applicaties en productie- in gegevensverwerking). Er bestaan ook andere pakketten, niet al die pakketten blijven bestaan. Je hebt pakketten voor zeer grote bedrijven (SAP bv.). De modules die men heeft zullen normaal wel dezelfde zijn.
+Alles staat centraal en alle gegevens kunnen aangesproken worden vanuit het centrale punt.
+Het bekendste systeem is dat van SAP (Systemen, applicaties en productie- en gegevensverwerking). Er bestaan ook andere pakketten, niet al die pakketten blijven bestaan. Je hebt pakketten voor zeer grote bedrijven (SAP bv.). De modules die men heeft zullen normaal wel dezelfde zijn.
 
 \paragraph{Slide 141:} Voordeel: geen gedistribueerde databases meer, je hebt alles centraal. We kunnen het gebruiken voor een ganse reeks simulaties. 
 
-\paragraph{Slide 142:} Je moet altijd eerst nagaan of je wel zo'n pakket nodig hebt. Soms kan je het zelf oplossen. Een keer je gekozen hebt om een pakket te nemen, moet je gaan kijken wat bedrijven je kunnen aanbieden. Je moet zelf gaan zien wat je nodig hebt (zelf defini\"eren) en op basis daarvan selecteer je: bedrijven die reeds een aantal opdrachten hebben uitgevoerd in andere bedrijven. Je moet ervoor zorgen of zo'n bedrijf de volgende tien jaar nog wel zal bestaan, anders kan je in de problemen geraken. \\
-Eens je geselecteerd hebt, komt het contract. Daar moet je enorm voorzichtig mee zijn, er moet alles juist instaan wat je wil hebben (zeer juist en duidelijk beschreven). Alles in verband met implementatie, onderhoud en aanpassingen moet daar ook in voorkomen.\\
+\paragraph{Slide 142:} Je moet altijd eerst nagaan of je wel zo'n pakket nodig hebt. Soms kan je het zelf oplossen. Een keer je gekozen hebt om een pakket te nemen, moet je gaan kijken wat bedrijven je kunnen aanbieden. Je moet zelf gaan zien wat je nodig hebt (zelf defini\"eren) en op basis daarvan selecteer je: bedrijven die reeds een aantal opdrachten hebben uitgevoerd in andere bedrijven. Je moet zien of zo'n bedrijf de volgende tien jaar nog wel zal bestaan, anders kan je in de problemen geraken. \\
+Eens je geselecteerd hebt komt het contract. Daar moet je enorm voorzichtig mee zijn, er moet alles juist instaan wat je wil hebben (zeer juist en duidelijk beschreven). Alles in verband met implementatie, onderhoud en aanpassingen moet daar ook in voorkomen.\\
 Dan kom je aan de implementatiefase: moeilijkste fase omdat je daar ook intern bezig bent met de mensen die je erbij moet betrekken. Ze start wanneer je begint met de initiatiefase: je moet mensen betrekken die achteraf met het pakket zullen moeten werken. Die zullen ook eisen hebben over het pakket. Je moet ook mensen opleiden om met die systemen te kunnen werken. 
 
 \paragraph{Slide 143:} Enqu\^etes uitgevoerd en men is tot de conclusie gekomen dat slechts 10\% succesvol is (het volledige pakket ge\"implementeerd). In 55\% laat men enkele modules vallen (dus niet geheel ge\"implementeerd) omdat ze er bv. al zelf een pakket voor hadden. Veel pakketten moeten aangepast worden aan de klant.\\
