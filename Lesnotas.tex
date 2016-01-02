@@ -1082,7 +1082,7 @@ Let op dat de zaken die je gebruikt vaak enkel bruikbaar zijn binnen bepaalde ma
 
 \paragraph{Slide 43:} Voordeel: stabiel. Nadelen: je moet kijken of er een trend is of niet en bepaalde zaken worden niet in rekening gehouden, zoals complexe relaties, die hierin niet kunnen worden meegenomen.
 
-\paragraph{Slide 44:} Tweede techniek om stationaire reeksen te voorspellen: exponenti\"ele afvlakking. We gaan elke keer een gewogen gemiddelde berekenen: we maken een bepaalde voorspelling, krijgen een bepaalde vraag die normaal zal afwijken en we gaan dat lineair interpoleren en op basis daarvan een nieuwe vraag afleiden. Het komt er dus op neer dat we een gewogen gemiddelde nemen tussen de gekende vraag en de voorspelling. We moeten weer een gewicht geven aan de gekende vraag en het voorspelde getal. De nieuwe voorspelling zal gelijk zijn aan $\alpha$. 
+\paragraph{Slide 44:} Tweede techniek om stationaire reeksen te voorspellen: exponenti\"ele afvlakking. We gaan elke keer een gewogen gemiddelde berekenen: we maken een bepaalde voorspelling, krijgen een bepaalde vraag die normaal zal afwijken en we gaan dat lineair interpoleren en op basis daarvan een nieuwe vraag afleiden. Het komt er dus op neer dat we een gewogen gemiddelde nemen tussen de gekende vraag en de voorspelling. We moeten weer een gewicht geven aan de gekende vraag en het voorspelde getal. De nieuwe voorspelling $F_{T+k}$ zal gelijk zijn aan $\alpha d_T + (1-\alpha)S_{T-1}$ met $d_T$ de gekende vraag op tijdstip $T$ en $S_{T-1}$ de voorspelling van de vorige periode.
 
 \paragraph{Slide 45:} $\alpha$ zal men meestal liggen rond 0,1, 0,2. Als je $\alpha$ groter maakt, zal je veel meer variabel rondspringen. Als $\alpha$ kleiner is, zal je een veel stabieler patroon hebben. Als je de eerste formule uitschrijft als $F_{t-1}$ en $D_{t-1}$, zie je dat we rekening houden met alle voorbije data. De factor waarmee we rekening houden met het verleden wordt wel kleiner met de tijd. 
 
@@ -1098,7 +1098,7 @@ Voorbeeld: zie Figuur \ref{les11_03}.
 
 \paragraph{Slide 47:} Als er een trend is, lopen beide methoden achter. ES houdt rekening met alle voorbije data, met telkens minder gewicht. Het grote voordeel van het voortschrijdend gemiddelde is dat als er ergens een piek is (meetfout bv.), dan zal die na enkele periodes niet meer in rekening genomen worden. 
 
-\paragraph{Slide 48:} We hebben voor de voorbije 24 maanden de verkopen staan. Als we kijken naar de cijfers die er staan, merken we dat de waarden stijgen en er zal wellicht ergens een trend inzitten. We kunnen dit oplossen met regressieanalyse, maar expoleren is gevaarlijk.
+\paragraph{Slide 48:} We hebben voor de voorbije 24 maanden de verkopen staan. Als we kijken naar de cijfers die er staan, merken we dat de waarden stijgen en er zal wellicht ergens een trend inzitten. We kunnen dit oplossen met regressieanalyse, maar extrapoleren is gevaarlijk.
 
 \paragraph{Slide 49:} Komen we een curve zoals deze tegen, gaan we dubbele exponenti\"ele afvlakking gebruiken. Het is de bedoeling om de trend te vinden (lineair) die er is.
 
@@ -1169,7 +1169,7 @@ Als je het eerste deel meeneemt, ga je te lang nodig hebben om je aan te passen 
 
 \paragraph{Slide 58:} Formules.
 
-\paragraph{Slide 59:} Voorbeeld: We hebben de periodes t, de vraag d en de voorspelling F gekoppeld aan die vraag d. e = F-d. E is de cumulatieve fout. MAD is de absolute waarde van het gewogen gemiddelde. MSE is de gemiddelde foutmarge in het kwadraat. MAPE zijn de percentages.\\
+\paragraph{Slide 59:} Voorbeeld: We hebben de periodes t, de vraag d en de voorspelling F gekoppeld aan die vraag d. e = F-d. E is de cumulatieve fout. MAD is het gemiddelde van de absolute waarden van de fouten. MSE is de gemiddelde foutmarge in het kwadraat. MAPE zijn de percentages.\\
 Wat kunnen we zeggen over de e-kolom? We moeten zowel positieve als negatieve waarden hebben. Als we altijd een positieve of negatieve fout vinden, gaan we voorlopen. Het is niet zo dat we graag kleine negatieve en grote positieve waarden hebben. We willen dat als we de som gaan bekijken, we ongeveer 0 uitkomen. Als de waarden in E zowel positief als negatief zijn, is dat ook goed. Je wilt waarden vinden die positief en negatief zijn en liefst zo dicht mogelijk bij nul liggen. Bij MAD, MSE en MAPE hebben we graag waarden die stabiel worden na een bepaalde periode. Kijken we naar de gemiddelde fout en de gemiddelde kwadratische fout, deze mogen niet plots beginnen stijgen, want dan krijgen we plots grote afwijkingen. We willen dus dat die waarden relatief stabiel zijn. MAPE moet ook stabiel zijn, dat geeft ons weer wat onze gemiddelde afwijking is.\\
 Als we tot de conclusie komen dat bepaalde zaken totaal fout lopen, moeten we de zaken analyseren.
 
@@ -1420,7 +1420,7 @@ Dit alles is gebaseerd op Pareto. Als je kijkt naar voorraden gaan we zien dat e
 Het is soms interessant om items die lang in het magazijn blijven liggen te verkopen aan restwaarde en te vervangen door items die minder lang in het magazijn liggen. Bedrijven doen dit vaak niet omdat ze dat ingeschreven hebben aan een bepaalde kostprijs en ze moeten dat dan verkopen aan bijna niks.\\
 Voor de eerste groep van items ga je zorgen dat je een hoge service graad hebt. De items achteraan, daar kun je iets rustiger mee zijn, maar wel nog mee oppassen: het is niet omdat een stuk een kleine rotatie heeft, dat het niet belangrijk is.
 
-\paragraph{Slide 27:} Ongeveer 8\% van de producten zorgt voor ongeveer 80\% van de rotatie. We moeten ook kijken naar de stukkken meest rechts. Het kan zijn dat dat wisselstukken zijn voor bepaalde belangrijke machines. Als de machine faalt betekent dat dat daar zware kosten voor zijn, dus die stukkken moeten wel op voorraad zijn.\\
+\paragraph{Slide 27:} Ongeveer 8\% van de producten zorgt voor ongeveer 80\% van de rotatie. We moeten ook kijken naar de stukken meest rechts. Het kan zijn dat dat wisselstukken zijn voor bepaalde belangrijke machines. Als de machine faalt betekent dat dat daar zware kosten voor zijn, dus die stukken moeten wel op voorraad zijn.\\
 A zeker grondig bekijken, bij C moet je nagaan of er iets kritiek is.\\
 Die curves kunnen verschillende soorten vormen aannemen. Als ze zeer snel stijgt, zal je veel stukken hebben met hoge waarde. Bij hoogtechnologische producten zal men dit type curve hebben. Bij Carrefour bv. verkoopt men alles (computers, kleren, eten), bij hen zal de curve niet zo uitgesproken zijn, eerder vlakker (lineairder): zie Figuur \ref{les13_01}.
 
